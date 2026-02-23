@@ -1,16 +1,21 @@
-## Hi there 👋
+### Sven Meys
 
-<!--
-**svenmeys/svenmeys** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Making dev tools. Mostly for myself, sometimes for others.
 
-Here are some ideas to get you started:
+**Currently working on**
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+- 🎫 Ticketron — Autonomous ticket resolution pipeline
+- 🌈 [Bifrost](https://github.com/svenmeys/bifrost) — One window, all projects, zero context switching
+- 🔄 Loop — Spec-driven development tool
+
+**Projects**
+
+- 🛠️ [ws](https://github.com/svenmeys/ws) — Workspace CLI for multi-project setups
+- 🔋 [claude-context-battery](https://github.com/svenmeys/claude-context-battery) — Context window visualizer for Claude Code
+- 🔗 [pal-mcp-server](https://github.com/svenmeys/pal-mcp-server) — Multi-model orchestration MCP server *(fork)*
+
+**Other work**
+
+- 🤖 [AsyncBot](https://asyncbot.dev) — Async on-call planning for engineering teams
+
+Belgium
