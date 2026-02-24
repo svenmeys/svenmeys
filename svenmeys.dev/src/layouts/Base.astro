@@ -1,0 +1,137 @@
+---
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = 'Dad of 4. Building dev tools with AI teammates.' } = Astro.props;
+const canonical = new URL(Astro.url.pathname, Astro.site);
+const pageTitle = title === 'Sven Meys' ? title : `${title} | Sven Meys`;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="canonical" href={canonical} />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={new URL('/sven.jpg', Astro.site)} />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content={pageTitle} />
+    <meta name="twitter:description" content={description} />
+
+    <title>{pageTitle}</title>
+  </head>
+  <body>
+    <canvas id="scene"></canvas>
+    <main>
+      <slot />
+    </main>
+    <script is:inline src="/scene.js"></script>
+  </body>
+</html>
+
+<style is:global>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --text: #f0f0f0;
+    --text-muted: #aaa;
+    --bg: #0a0a0a;
+    --accent: #ff3333;
+    --accent-soft: rgba(255, 51, 51, 0.12);
+    --border: rgba(255, 255, 255, 0.1);
+    --panel: rgba(8, 8, 8, 0.85);
+    --width: 560px;
+  }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+
+  #scene {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none;  /* mouse events pass through to content */
+  }
+
+  main {
+    position: relative;
+    z-index: 1;
+    max-width: var(--width);
+    padding: 3rem 2rem;
+    min-height: 100vh;
+  }
+
+  @media (min-width: 768px) {
+    main {
+      margin-left: 5vw;
+      border-right: 1px solid var(--accent-soft);
+      background: var(--panel);
+      backdrop-filter: blur(4px);
+    }
+  }
+
+  @media (max-width: 767px) {
+    main {
+      margin: 0 auto;
+      background: var(--panel);
+    }
+  }
+
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  /* Card abduction / return animations */
+  .card--abducted {
+    animation: abduct 0.6s ease-in forwards;
+    pointer-events: none;
+  }
+
+  .card--returned {
+    animation: returned 0.5s ease-out;
+  }
+
+  @keyframes abduct {
+    0% { opacity: 1; transform: translateY(0) scale(1); }
+    60% { opacity: 0.5; transform: translateY(-30px) scale(0.8); }
+    100% { opacity: 0; transform: translateY(-60px) scale(0.3); height: 0; padding: 0; margin: 0; border: 0; overflow: hidden; }
+  }
+
+  @keyframes returned {
+    0% { opacity: 0; transform: translateY(-40px) scale(0.5); }
+    60% { opacity: 1; transform: translateY(5px) scale(1.02); }
+    100% { opacity: 1; transform: translateY(0) scale(1); }
+  }
+
+  /* Whole-screen shake on impact */
+  body.shake {
+    animation: panelShake 0.5s ease-out !important;
+  }
+
+  @keyframes panelShake {
+    0% { transform: translate(0, 0); }
+    10% { transform: translate(-15px, 4px); }
+    20% { transform: translate(12px, -3px); }
+    30% { transform: translate(-10px, 5px); }
+    40% { transform: translate(8px, -2px); }
+    55% { transform: translate(-5px, 2px); }
+    70% { transform: translate(3px, -1px); }
+    85% { transform: translate(-1px, 1px); }
+    100% { transform: translate(0, 0); }
+  }
+</style>

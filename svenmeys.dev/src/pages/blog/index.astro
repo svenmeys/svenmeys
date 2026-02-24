@@ -1,0 +1,60 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getCollection } from 'astro:content';
+
+const posts = (await getCollection('posts', ({ data }) => !data.draft))
+  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+---
+
+<Base title="Blog" description="Writing about building dev tools, AI-native development, and shipping solo.">
+  <nav><a href="/">&larr; Home</a></nav>
+
+  <h1>Blog</h1>
+
+  {posts.length === 0 ? (
+    <p class="empty">Nothing here yet.</p>
+  ) : (
+    <ul class="posts">
+      {posts.map(post => (
+        <li>
+          <a href={`/blog/${post.id}`}>
+            <time>{post.data.date.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}</time>
+            <span>{post.data.title}</span>
+          </a>
+        </li>
+      ))}
+    </ul>
+  )}
+</Base>
+
+<style>
+  nav { margin-bottom: 2rem; }
+  nav a { font-size: 0.875rem; color: var(--text-muted); }
+
+  h1 { font-size: 1.5rem; margin-bottom: 1.5rem; }
+
+  .posts { list-style: none; }
+
+  .posts li {
+    padding: 0.625rem 0;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .posts li:last-child { border-bottom: none; }
+
+  .posts a {
+    display: flex;
+    gap: 1rem;
+    align-items: baseline;
+  }
+
+  .posts time {
+    font-size: 0.8125rem;
+    color: var(--text-muted);
+    min-width: 85px;
+  }
+
+  .posts span { color: var(--text); }
+
+  .empty { color: var(--text-muted); }
+</style>

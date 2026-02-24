@@ -1,21 +1,19 @@
 ### Sven Meys
 
-Making dev tools. Mostly for myself, sometimes for others.
+Dad of 4. Building dev tools between bedtimes.
 
-**Currently working on**
-
-- 🎫 Ticketron — Autonomous ticket resolution pipeline
-- 🌈 [Bifrost](https://github.com/svenmeys/bifrost) — One window, all projects, zero context switching
-- 🔄 Loop — Spec-driven development tool
+One developer + AI teammates should be able to do what used to take a team of twenty. I'm building the tools to prove it.
 
 **Projects**
 
-- 🛠️ [ws](https://github.com/svenmeys/ws) — Workspace CLI for multi-project setups
-- 🔋 [claude-context-battery](https://github.com/svenmeys/claude-context-battery) — Context window visualizer for Claude Code
-- 🔗 [pal-mcp-server](https://github.com/svenmeys/pal-mcp-server) — Multi-model orchestration MCP server *(fork)*
-
-**Other work**
-
-- 🤖 [AsyncBot](https://asyncbot.dev) — Async on-call planning for engineering teams
+| | | |
+|---|---|---|
+| [AsyncBot](https://asyncbot.app) | Slack bot for team duty rotations | **Live** |
+| [Ticketron](https://github.com/svenmeys/ticketron) | Give it a ticket, get back a pull request | Soon |
+| Loop | Autonomous dev loop. Runs specs, validates ACs | Soon |
+| [Context Battery](https://github.com/svenmeys/claude-context-battery) | Context window battery bar for Claude Code | OSS |
+| [ws](https://github.com/svenmeys/ws) | VS Code workspace CLI. Helps AI find your projects | OSS |
+| [Slopdrop](https://slopdrop.dev) | Finally, a home for your AI's output | Soon |
+| [Bifrost](https://github.com/svenmeys/bifrost) | One window, all projects, zero context switching | Idea |
 
 Belgium
