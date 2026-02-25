@@ -14,6 +14,7 @@ One developer + AI teammates should be able to do what used to take a team of tw
 | [Context Battery](https://github.com/svenmeys/claude-context-battery) | Context window battery bar for Claude Code | OSS |
 | [ws](https://github.com/svenmeys/ws) | VS Code workspace CLI. Helps AI find your projects | OSS |
 | [Slopdrop](https://slopdrop.dev) | Finally, a home for your AI's output | Soon |
+| [Shortmoji](https://github.com/svenmeys/shortmoji) | :emoji: shortcodes everywhere. Chrome extension | Free |
 | [Bifrost](https://github.com/svenmeys/bifrost) | One window, all projects, zero context switching | Idea |
 
 Belgium
