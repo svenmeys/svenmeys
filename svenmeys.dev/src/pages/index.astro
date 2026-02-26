@@ -110,6 +110,10 @@ const projects = [
     <a href="https://linkedin.com/in/svenmeys" target="_blank" rel="noopener">LinkedIn</a>
     <a href="https://x.com/svenmeys" target="_blank" rel="noopener">X</a>
     <a href="mailto:hello@svenmeys.dev">Email</a>
+    <a href="https://ko-fi.com/svenmeys" target="_blank" rel="noopener" class="kofi">
+      <img src="/kofi.svg" alt="" width="16" height="16" />
+      Ko-fi
+    </a>
   </footer>
 </Base>
 
@@ -256,4 +260,7 @@ const projects = [
 
   footer a { color: var(--text-muted); }
   footer a:hover { color: var(--accent); }
+  .kofi { display: inline-flex; align-items: center; gap: 0.25rem; }
+  .kofi img { opacity: 0.6; }
+  .kofi:hover img { opacity: 1; }
 </style>
