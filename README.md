@@ -11,6 +11,7 @@ One developer + AI teammates should be able to do what used to take a team of tw
 | [AsyncBot](https://asyncbot.app) | Slack bot for team duty rotations | **Live** |
 | [Ticketron](https://github.com/svenmeys/ticketron) | Give it a ticket, get back a pull request | Soon |
 | Loop | Autonomous dev loop. Runs specs, validates ACs | Soon |
+| [Campsite](https://github.com/svenmeys/campsite) | Leave every session better than you found it. Workflow toolkit for Claude Code | OSS |
 | [Context Battery](https://github.com/svenmeys/claude-context-battery) | Context window battery bar for Claude Code | OSS |
 | [ws](https://github.com/svenmeys/ws) | VS Code workspace CLI. Helps AI find your projects | OSS |
 | [Slopdrop](https://slopdrop.dev) | Finally, a home for your AI's output | Soon |
