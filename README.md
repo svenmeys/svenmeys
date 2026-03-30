@@ -9,13 +9,12 @@ One developer + AI teammates should be able to do what used to take a team of tw
 | | | |
 |---|---|---|
 | [AsyncBot](https://asyncbot.app) | Slack bot for team duty rotations | **Live** |
-| [Ticketron](https://github.com/svenmeys/ticketron) | Give it a ticket, get back a pull request | Soon |
-| Loop | Autonomous dev loop. Runs specs, validates ACs | Soon |
+| [Shortmoji](https://github.com/svenmeys/shortmoji) | :emoji: shortcodes everywhere. [Chrome](https://chromewebstore.google.com/detail/shortmoji-%E2%80%94-emoji-shortco/aadplodncodnhikbahnobbebpbgpbiaa) · [Firefox](https://addons.mozilla.org/en-US/firefox/addon/shortmoji-emoji-shortcodes/) | **Live** |
 | [Campsite](https://github.com/svenmeys/campsite) | Leave every session better than you found it. Workflow toolkit for Claude Code | OSS |
 | [Context Battery](https://github.com/svenmeys/claude-context-battery) | Context window battery bar for Claude Code | OSS |
 | [ws](https://github.com/svenmeys/ws) | VS Code workspace CLI. Helps AI find your projects | OSS |
+| [Ticketron](https://github.com/svenmeys/ticketron) | Give it a ticket, get back a pull request | Soon |
 | [Slopdrop](https://slopdrop.dev) | Finally, a home for your AI's output | Soon |
-| [Shortmoji](https://github.com/svenmeys/shortmoji) | :emoji: shortcodes everywhere. Chrome extension | Free |
-| [Bifrost](https://github.com/svenmeys/bifrost) | One window, all projects, zero context switching | Idea |
+| [Loop](https://github.com/svenmeys/loop) | Spec-driven autonomous dev loop. Learnings published | Experiment |
 
 Belgium

@@ -7,21 +7,15 @@ const posts = (await getCollection('posts', ({ data }) => !data.draft))
 
 const projects = [
   {
-    name: 'Ticketron',
-    url: 'https://github.com/svenmeys/ticketron',
-    desc: 'Give it a ticket, get back a pull request. Autonomous code execution.',
-    tag: 'Soon',
-  },
-  {
-    name: 'Loop',
-    url: '#',
-    desc: 'Autonomous dev loop. Runs specs, validates ACs, keeps AI on track.',
-    tag: 'OSS',
-  },
-  {
     name: 'AsyncBot',
     url: 'https://asyncbot.app',
     desc: 'Slack bot for team duty rotations. Know who\'s responsible without asking.',
+    tag: 'Live',
+  },
+  {
+    name: 'Shortmoji',
+    url: 'https://github.com/svenmeys/shortmoji',
+    desc: ':emoji: shortcodes everywhere. Chrome + Firefox.',
     tag: 'Live',
   },
   {
@@ -43,10 +37,10 @@ const projects = [
     tag: 'OSS',
   },
   {
-    name: 'Shortmoji',
-    url: 'https://github.com/svenmeys/shortmoji',
-    desc: ':emoji: shortcodes everywhere. Chrome extension.',
-    tag: 'OSS',
+    name: 'Ticketron',
+    url: 'https://github.com/svenmeys/ticketron',
+    desc: 'Give it a ticket, get back a pull request. Autonomous code execution.',
+    tag: 'Soon',
   },
   {
     name: 'Slopdrop',
@@ -55,16 +49,16 @@ const projects = [
     tag: 'Soon',
   },
   {
-    name: 'Bifrost',
-    url: 'https://github.com/svenmeys/bifrost',
-    desc: 'One window, all projects, zero context switching.',
-    tag: 'Idea',
-  },
-  {
     name: 'SmarterSchool',
     url: '#',
     desc: 'Smartschool wrapper for confused parents.',
     tag: 'Soon',
+  },
+  {
+    name: 'Loop',
+    url: 'https://github.com/svenmeys/loop',
+    desc: 'Spec-driven autonomous dev loop. Learnings published.',
+    tag: 'Experiment',
   },
 ];
 ---
@@ -234,6 +228,11 @@ const projects = [
   }
 
   .badge--idea {
+    background: rgba(180, 130, 255, 0.1);
+    color: #b482ff;
+  }
+
+  .badge--experiment {
     background: rgba(180, 130, 255, 0.1);
     color: #b482ff;
   }
