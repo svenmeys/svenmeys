@@ -2,8 +2,6 @@
 
 Dad of 4. Building dev tools between bedtimes.
 
-One developer + AI teammates should be able to do what used to take a team of twenty. I'm building the tools to prove it.
-
 **Projects**
 
 | | | |
