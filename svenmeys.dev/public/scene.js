@@ -14,7 +14,12 @@
   window.addEventListener('mousemove', e => { mouseX = e.clientX; mouseY = e.clientY; });
   window.addEventListener('mouseleave', () => { mouseX = -1; mouseY = -1; mouseHeld = false; });
   window.addEventListener('mousedown', e => {
-    if (!e.target.closest('main')) { fireQueued = true; mouseHeld = true; }
+    if (e.target.closest('main')) return;
+    // Holding to shoot shouldn't drag a text selection across the page. Text in the panel still selects.
+    e.preventDefault();
+    getSelection()?.removeAllRanges();
+    fireQueued = true;
+    mouseHeld = true;
   });
   window.addEventListener('mouseup', () => { mouseHeld = false; });
 
